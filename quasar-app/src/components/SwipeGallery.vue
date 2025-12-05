@@ -8,7 +8,7 @@
                             <h2 class="slide__heading">HAPPY</h2>
                             <figure class="slide__img-cont">
                                 <img class="slide__img"
-                                    src="../assets/pictures/1.jpg"
+                                    src="../assets/pictures/10.jpeg"
                                     alt="" />
                             </figure>
                         </div>
@@ -25,7 +25,7 @@
                             <h2 class="slide__heading">BIRTH</h2>
                             <figure class="slide__img-cont">
                                 <img class="slide__img"
-                                    src="../assets/pictures/2.jpg"
+                                    src="../assets/pictures/6.jpg"
                                     alt="" />
                             </figure>
                         </div>
@@ -73,13 +73,13 @@
                 <!-- <p class="overlay__count">0<span class="count">1</span></p> -->
                 <figure class="overlay__img-cont">
                     <img class="image"
-                        src="../assets/pictures/5.jpg" />
+                        src="../assets/pictures/9.jpeg" />
                     <img class="image"
-                        src="../assets/pictures/6.jpg" />
+                        src="../assets/pictures/11.jpeg" />
                     <img class="image"
-                        src="../assets/pictures/6.jpg" />
+                        src="../assets/pictures/7.jpeg" />
                     <img class="image"
-                        src="../assets/pictures/6.jpg" />
+                        src="../assets/pictures/8.jpeg" />
                 </figure>
             </div>
         </section>

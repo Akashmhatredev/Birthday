@@ -1,8 +1,8 @@
 {
   "name": "quasar app",
   "version": "0.0.1",
-  "description": "This is a fun party card game",
-  "productName": "demo renders",
+  "description": "This is a birthday card for a friend",
+  "productName": "Birthday Card",
   "author": "akashmhatre <akash.mhatre@incentius.com>",
   "private": true,
   "scripts": {
