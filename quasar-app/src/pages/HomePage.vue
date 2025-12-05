@@ -1,7 +1,8 @@
 <template>
-  <q-page
+  <q-page v-if="!showGallery"
     class="tw-flex tw-items-center tw-justify-center tw-min-h-screen tw-overflow-hidden bg-cake-base"
   >
+  <div  > 
     <div class="tw-fixed tw-bottom-4 tw-right-4 tw-z-50">
       <input
         id="volume"
@@ -398,7 +399,11 @@
         </span>
       </button>
     </div>
-  </q-page>
+ </div>
+</q-page>
+<div v-else>
+  <SwipeGallery />
+</div>
 </template>
 
 <script setup>
@@ -406,7 +411,7 @@ import { ref, onMounted, onUnmounted } from "vue";
 import { useRouter } from "vue-router";
 import { gsap } from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
-
+import SwipeGallery from "src/components/SwipeGallery.vue";
 gsap.registerPlugin(MorphSVGPlugin);
 
 const router = useRouter();
@@ -422,7 +427,7 @@ const candle1Ref = ref(null);
 const candle2Ref = ref(null);
 const candle3Ref = ref(null);
 const cakeSvgRef = ref(null);
-
+const showGallery = ref(false);
 const SOUNDS = {
   CHEER: new Audio(
     "https://s3-us-west-2.amazonaws.com/s.cdpn.io/605876/cheer.mp3"
@@ -662,7 +667,8 @@ onMounted(() => {
       },
       onComplete: () => {
         gsap.delayedCall(2, () => {
-          router.push("/swipe");
+          // router.push("/swipe");
+          showGallery.value = true;
         });
       },
       paused: true,

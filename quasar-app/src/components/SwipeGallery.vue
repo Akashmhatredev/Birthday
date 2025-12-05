@@ -22,7 +22,7 @@
                 <div class="slide__inner">
                     <div class="slide__content">
                         <div class="slide__container">
-                            <h2 class="slide__heading">BIRTHDAY</h2>
+                            <h2 class="slide__heading">BIRTH</h2>
                             <figure class="slide__img-cont">
                                 <img class="slide__img"
                                     src="../assets/pictures/2.jpg"
@@ -39,7 +39,7 @@
                 <div class="slide__inner">
                     <div class="slide__content">
                         <div class="slide__container">
-                            <h2 class="slide__heading">NAMASTE</h2>
+                            <h2 class="slide__heading">DAY</h2>
                             <figure class="slide__img-cont">
                                 <img class="slide__img"
                                     src="../assets/pictures/3.jpg"
@@ -56,7 +56,7 @@
                 <div class="slide__inner">
                     <div class="slide__content">
                         <div class="slide__container">
-                            <h2 class="slide__heading">SWIPE</h2>
+                            <h2 class="slide__heading">NAMAN</h2>
                             <figure class="slide__img-cont">
                                 <img class="slide__img"
                                     src="../assets/pictures/4.jpg"
@@ -70,7 +70,7 @@
 
         <section class="overlay">
             <div class="overlay__content">
-                <p class="overlay__count">0<span class="count">1</span></p>
+                <!-- <p class="overlay__count">0<span class="count">1</span></p> -->
                 <figure class="overlay__img-cont">
                     <img class="image"
                         src="../assets/pictures/5.jpg" />
