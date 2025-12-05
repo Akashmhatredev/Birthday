@@ -107,9 +107,10 @@
               ></rect>
             </clipPath>
             <clipPath :id="`frosting-clip-${uid}`">
-              <path
+              <!-- <path
                 d="m 58.311339,159.19367 c -1.915439,0 -3.331523,2.04311 -3.986711,3.74446 -0.778328,2.02111 -0.761971,4.73695 0.529167,6.47582 0.861406,1.16012 2.614079,1.3182 4.033715,1.5875 1.321013,0.25059 2.689143,0 4.033714,0 1.344572,0 2.689143,0 4.033715,0 1.344572,0 2.689143,0 4.033715,0 1.344571,0 2.689143,0 4.033714,0 1.344572,0 2.689143,0 4.033715,0 1.344572,0 2.689143,0 4.033715,0 1.344573,0 2.689143,0 4.033713,0 1.34457,0 2.68915,0 4.03372,0 1.34457,0 2.68914,0 4.03371,0 1.34457,0 2.71271,0.25059 4.03372,0 1.41963,-0.2693 3.17231,-0.42738 4.03371,-1.5875 1.29114,-1.73887 1.3075,-4.45471 0.52917,-6.47582 -0.65519,-1.70135 -2.07128,-3.74446 -3.98672,-3.74446 z"
-              ></path>
+              ></path> -->
+              <use :xlink:href="`#frosting-${uid}`"></use>
             </clipPath>
 
             <g :id="`sprinkles-${uid}`" transform="translate(63.93)">
@@ -402,11 +403,13 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import { useRouter } from "vue-router";
 import { gsap } from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(MorphSVGPlugin);
 
+const router = useRouter();
 const birthdayText = "Happy Birthday!".split("");
 const isAudioUnmuted = ref(false);
 
@@ -470,7 +473,7 @@ const BLINK = (eyes) => {
 const FROSTING_TL = () => {
   const tl = gsap.timeline();
   // We use the ID with the unique UID for targeting
-  tl.to(`#frosting-${uid}`, { scaleX: 1.015, duration: 0.25 }, 0).to(
+  tl.to(`#frosting-${uid}`, { scaleX: 1.1, y: 1.2, x: 5, duration: 0.25 }, 0).to(
     `#frosting-${uid}`,
     { scaleY: 1, duration: 1 },
     0
@@ -603,6 +606,7 @@ const RESET = () => {
     transformOrigin: "50% 10%",
     scaleX: 0,
     scaleY: 0,
+    rotation: 5,
   });
   gsap.set(".cake__frosting-patch", { display: "none" });
   gsap.set([".cake__frosting--duplicate", ".cake__sprinkles--duplicate"], {
@@ -657,8 +661,9 @@ onMounted(() => {
         SOUNDS.ON.play();
       },
       onComplete: () => {
-        gsap.delayedCall(2, RESET);
-        if (btnRef.value) btnRef.value.removeAttribute("disabled");
+        gsap.delayedCall(2, () => {
+          router.push("/swipe");
+        });
       },
       paused: true,
     })

@@ -2,7 +2,10 @@ const routes = [
   {
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
-    children: [{ path: "", component: () => import("pages/HomePage.vue") }],
+    children: [
+      { path: "", component: () => import("pages/HomePage.vue") },
+      { path: "/swipe", component: () => import("pages/SwipeGallery.vue") },
+    ],
   },
 
   // Always leave this as last one,
