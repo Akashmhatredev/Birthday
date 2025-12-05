@@ -5,10 +5,44 @@
                 <div class="slide__inner">
                     <div class="slide__content">
                         <div class="slide__container">
-                            <h2 class="slide__heading">SCROLL</h2>
+                            <h2 class="slide__heading">HAPPY</h2>
                             <figure class="slide__img-cont">
                                 <img class="slide__img"
-                                    src="https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDUzOA&ixlib=rb-1.2.1&q=80&w=400"
+                                    src="../assets/pictures/1.jpg"
+                                    alt="" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide">
+            <div class="slide__outer">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <div class="slide__container">
+                            <h2 class="slide__heading">BIRTHDAY</h2>
+                            <figure class="slide__img-cont">
+                                <img class="slide__img"
+                                    src="../assets/pictures/2.jpg"
+                                    alt="" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide">
+            <div class="slide__outer">
+                <div class="slide__inner">
+                    <div class="slide__content">
+                        <div class="slide__container">
+                            <h2 class="slide__heading">NAMASTE</h2>
+                            <figure class="slide__img-cont">
+                                <img class="slide__img"
+                                    src="../assets/pictures/3.jpg"
                                     alt="" />
                             </figure>
                         </div>
@@ -25,41 +59,7 @@
                             <h2 class="slide__heading">SWIPE</h2>
                             <figure class="slide__img-cont">
                                 <img class="slide__img"
-                                    src="https://images.unsplash.com/photo-1558603668-6570496b66f8?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDUzOA&ixlib=rb-1.2.1&q=85&w=400"
-                                    alt="" />
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="slide">
-            <div class="slide__outer">
-                <div class="slide__inner">
-                    <div class="slide__content">
-                        <div class="slide__container">
-                            <h2 class="slide__heading">SCROLL</h2>
-                            <figure class="slide__img-cont">
-                                <img class="slide__img"
-                                    src="https://images.unsplash.com/photo-1537165924986-cc3568f5d454?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDU4NA&ixlib=rb-1.2.1&q=85&w=400"
-                                    alt="" />
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="slide">
-            <div class="slide__outer">
-                <div class="slide__inner">
-                    <div class="slide__content">
-                        <div class="slide__container">
-                            <h2 class="slide__heading">SWIPE</h2>
-                            <figure class="slide__img-cont">
-                                <img class="slide__img"
-                                    src="https://images.unsplash.com/photo-1589271243958-d61e12b61b97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMyMDU4NA&ixlib=rb-1.2.1&q=80&w=400"
+                                    src="../assets/pictures/4.jpg"
                                     alt="" />
                             </figure>
                         </div>
@@ -73,13 +73,13 @@
                 <p class="overlay__count">0<span class="count">1</span></p>
                 <figure class="overlay__img-cont">
                     <img class="image"
-                        src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMxOTU4Mw&ixlib=rb-1.2.1&q=80&w=800" />
+                        src="../assets/pictures/5.jpg" />
                     <img class="image"
-                        src="https://images.unsplash.com/photo-1594666757003-3ee20de41568?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMxOTcwOA&ixlib=rb-1.2.1&q=80&w=800" />
+                        src="../assets/pictures/6.jpg" />
                     <img class="image"
-                        src="https://images.unsplash.com/photo-1579830341096-05f2f31b8259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMxOTQ5Ng&ixlib=rb-1.2.1&q=80&w=800" />
+                        src="../assets/pictures/6.jpg" />
                     <img class="image"
-                        src="https://images.unsplash.com/photo-1603771628302-c32c88e568e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjMxOTUxNg&ixlib=rb-1.2.1&q=80&w=800" />
+                        src="../assets/pictures/6.jpg" />
                 </figure>
             </div>
         </section>
